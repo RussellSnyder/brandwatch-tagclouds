@@ -1,0 +1,117 @@
+<html xmlns="html">
+<head>
+    <title>Brandwatch Tag Cloud Challenge</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+<body>
+    <div class="container">
+    <span id="cloud-description"></span>
+    <h1>My Topics Challenge</h1>
+        <div class="row">
+            <div class="col-md-8">
+                <div id="word-cloud"></div>
+            </div>
+            <div class="col-md-4" id="sidebar">
+                <div class="row">
+                    <div class="panel panel-default col-sm-6" id="main">
+                        <div class="panel-heading" id="label">Click a Topic!</div>
+                        <div class="panel-body">
+                            <h2>Overview</h2>
+                            <p id="type"><b>Type: </b><span id="type"></span></p>
+                            <p id="bursts"><b>Burst: </b><span id="burst"></span></p>
+                            <p id="volume"><b>Volume: </b><span id="volume"></span></p>
+                            
+
+                        </div>
+                    </div>
+                    <div class="panel panel-default col-sm-6" id="sentiment">
+                        <div class="panel-heading">Sentiments</div>
+                        <div class="panel-body">
+                            <p id="sentimentScore"><b>Sentiment Score: </b><span id="sentimentScore"></span></p>
+                            <p id="sentiment_negative">
+                                <b><i class="fa fa-frown-o"></i></b><span id="sentiment_negative"></span>
+                            </p>
+                            <p id="sentiment_positive">
+                                <b><i class="fa fa-smile-o"></i></b><span id="sentiment_positive"></span>
+                            </p>
+                            <p id="sentiment_neutral">
+                                <b><i class="fa fa-meh-o"></i></b><span id="sentiment_neutral"></span>
+                            </p>
+                        </div>
+                            
+                    </div>
+                    <div class="col-sm-12 panel panel-default" id="days-container">
+                        <div class="panel-heading">Days</div>
+                        <div class="panel-body" id="days-list">
+                            <div class="col-xs-6">
+                                <h2>Dates</h2>
+                                <div id="days-dates"></div>
+                            </div>
+                            <div class="col-xs-6">
+                                <h2>Volume</h2>
+                                <div id="days-volume"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 panel panel-default" id="pageType-container">
+                        <div class="panel-heading">Pages</div>
+                        <div class="panel-body" id="pageType">
+                            <div class="col-xs-6">
+                                <h2>Types</h2>
+                                <div id="page-type">
+                                    <p id="Blog"></p>
+                                    <p id="Facebook"></p>
+                                    <p id="Forum" ></p>
+                                    <p id="General" ></p>
+                                    <p id="Image" ></p>
+                                    <p id="News" ></p>
+                                    <p id="Review" ></p>
+                                    <p id="Twitter" ></p>
+                                    <p id="Video" ></p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <h2>Volume</h2>
+                                <div id="page-volume">
+                                    <p id="Blog" ></p>
+                                    <p id="Facebook" ></p>
+                                    <p id="Forum" ></p>
+                                    <p id="General" > </p>
+                                    <p id="Image" ></p>
+                                    <p id="News" ></p>
+                                    <p id="Review" ></p>
+                                    <p id="Twitter" ></p>
+                                    <p id="Video" ></p>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 panel panel-default" id="queries">
+                        <div class="panel-heading">Queries</div>
+                        <div class="panel-body" id="queries-body">
+                            <p>ID:  <span id="queries-id"></span></p>
+                            <p>Name:  <span id="queries-name"></span></p>
+                            <p>Volume:  <span id="queries-volume"></span></p>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+        <!-- CDNs -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+        <script type="text/javascript" src="http://d3js.org/d3.v3.min.js"></script>
+        <!-- other libs -->
+        <script type="text/javascript" src="assets/scripts/libs/d3.layout.cloud.js"></script>
+        <!-- Custom Scripts --> 
+        <script type="text/javascript" src="assets/scripts/nav/nav.js"></script>
+        <script type="text/javascript" src="assets/scripts/custom/functions.js"></script>
+        <script type="text/javascript" src="assets/scripts/custom/displayDataOnClick.js"></script>        
+        <script type="text/javascript" src="assets/scripts/custom/brandWatch_tagCloud.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+	font-size: 1.1em;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1,h2 {
+	// font-size: 2em;
+	font-family: 'Architects Daughter', cursive;
+}
+h1 {
+	margin-bottom: 30px;
+}
+
+h2 {
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	text-align: center;
+	margin-top: 0;
+	font-size: 1.2em;
+}
+
+h3 {
+	text-decoration: underline;
+	margin-bottom: 10px;	
+}
+
+.well {
+	padding: 0;
+}
+
+#sentiment i.fa {
+	margin-right: 16px;
+	font-size: 16px;
+}
+
+#days-dates, #days-volume {
+	text-align: center;
+}
