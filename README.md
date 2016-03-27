@@ -32,12 +32,12 @@ Assuming you have the git CLI installed, the easiest way to download the needed 
 
 `git clone https://github.com/RussellSnyder/brandwatch-tagclouds`
 
-Otherwise you can paste this link into your browser to download:
+Otherwise you can click this link or paste it into your browser to download:
 
 https://github.com/RussellSnyder/brandwatch-tagclouds/archive/master.zip
 
 
-or you can click the "Download ZIP" button on the top right side of https://github.com/RussellSnyder/brandwatch-tagclouds
+Finally, you can also click the "Download ZIP" button on the top right side of https://github.com/RussellSnyder/brandwatch-tagclouds to download the needed files to run locally.
 
 #### Navigating Files And Running
 
