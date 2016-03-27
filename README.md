@@ -25,7 +25,7 @@ otherwise you can download the zip from https://github.com/RussellSnyder/brandwa
 
 In the downloaded files, the main application can be found in app/index.html
 
-You can use pretty much whatever file serving server you would like to run this application (you can even drag the file into the chrome browser window and it will work bc it's all javascript), but I would recommend using a tiny node based server called live-server.  assuming you have the npm CLI installed, you can install live-server by running: 
+You can use pretty much whatever file serving server you would like to run this application, but I would recommend using a tiny node based server called live-server.  assuming you have the npm CLI installed, you can install live-server by running: 
 
 `[sudo] npm i -g live-server`
 
