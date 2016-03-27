@@ -1,27 +1,45 @@
 # Russell Snyder's BrandWatch Tag Clouds
-### programming challenge 
+### -- Programming Challenge -- 
 
 ## Introduction
 
-This github project is my approach to the BrandWatch Tag Cloud challenge.  Following guidelines given in the challenge.md file as closely as possible, I have created a small website with four tag clouds that match the criteria given.  
+This github project is my approach to the BrandWatch Tag Cloud challenge.  Following guidelines given in the challenge.md file as closely as possible, I have created a small website with four tag clouds that match the criteria given.  A working copy can be found at http://russellsnyder.io/tag-cloud/
+
+For browser performance, the each tag cloud is rendered using SVG which is a cross browser standard.  
+
+Special mention should be given to Jason Davies for his open source tag cloud examples (https://github.com/jasondavies/d3-cloud) as well as Swizec Teller for writing "Data Visualization with d3.js".  Both sources helped tremendously for this project.
 
 ## Personal Approach to Challenge
 
-I don't like static art that is always the same.  I like live jazz and stochastic algormithmic music that is fresh everytime, but consistent on a deeper level.  I took this approach towards this tag cloud challenge.  On each page refresh (or actully, ajax reload though navbar click events), a new tag cloud will be generated that is structured similarily to the previous, but will vary in several ways.
+I don't like static art that is always the same.  I like live jazz and stochastic algormithmic music that is fresh everytime, but consistent on a deeper level.  I took this approach towards this tag cloud challenge.  On each page refresh (or actully, reload through navbar click events), a new tag cloud will be generated that is structured similarily and reads the data to the previous, but will vary in several ways.
 
 Although there are variations each time, I took great care to make sure that the information was conveyed in each design, but allowed variance in colors and placement of text which I felt still lined up with the challenge.md.
 
-For technology, I took this opportunity to dive deep into and explore the potential of D3.js to make interactive, data driven web apps.  I have never used D3 in a professional setting and the learning curve is quite steep.  In exploring what D3 can do, I found that it can almost completely replace Jquery for dom interactions and has several built in data parsing function.  You'll notice that the nav bar is actually being rendered from a data in a CSV files!  Having recently completed several training in GSAP, I was surprised to find the tweening capabilities of D3 able to compete with GSAP. 
+For technology, I took this opportunity to dive deep into and explore the potential of D3.js to make interactive, data driven web apps.  I have never used D3 in a professional setting and the learning curve was quite steep.  In exploring what D3 can do, I found that it can almost completely replace Jquery for dom interactions and has several built in data parsing function.  You'll notice that the nav bar is actually being rendered from a data in a CSV files!  
 
-As for browser performance, the tag clouds are rendered using SVG which is a cross browser standard.  Also, bootstrap is used to allow for mobile experience as well.  Mobile optimization still needs to be made, but this application can be used on tablet and desktop. 
+
 
 ## Running this project
 
-assuming you have the git CLI installed, the easiest way to run this from the terminal
+A working version can be found at http://russellsnyder.io/tag-cloud/
+
+
+#### Download Files
+
+The following are instructions to run on your local machine:
+
+Assuming you have the git CLI installed, the easiest way to download the needed files is to run this from the terminal
 
 `git clone https://github.com/RussellSnyder/brandwatch-tagclouds`
 
-otherwise you can download the zip from https://github.com/RussellSnyder/brandwatch-tagclouds
+Otherwise you can paste this link into your browser to download:
+
+https://github.com/RussellSnyder/brandwatch-tagclouds/archive/master.zip
+
+
+or you can click the "Download ZIP" button on the top right side of https://github.com/RussellSnyder/brandwatch-tagclouds
+
+#### Navigating Files And Running
 
 In the downloaded files, the main application can be found in app/index.html
 
@@ -37,11 +55,11 @@ this command will launch your default browser with links to folders in my applic
 
 To experience the application, run `live-server` (what whatever server you would like) inside the app/ folder, or run it at the root of the project and navigate to app/index.html
 
-## Tests ##
+#### Tests
 
 Tests were performed using the Jasmine testing framework. To run the tests, run `live-server` at the root of the project and navigate to `test/SpecRunner.html`   
 
-## A Note on Testing 
+##### A Note on Testing 
 
 I have been working as a professional frontend developer for a while now, but have never been required to test my software using a testing framework.  I actually taught myself jasmine through my personal work with Angular becuase I have heard from a lot of smart people that TDD and BDD are important.  I found the process used for this project really helpful to develop reliable functions. 
 
